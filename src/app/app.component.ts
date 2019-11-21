@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   //radioItems: Array<string>;
   radioItems = ['option1', 'option2', 'option3'];
-  model   = {option: 'option1'};
+  model: string;
   clickMessage = '';
 
  // constructor() {
@@ -16,6 +16,6 @@ export class AppComponent  {
  // }
 
       onClickMe() {
-    this.clickMessage=this.model.option ;
+    this.clickMessage=this.model ;
   }
 }

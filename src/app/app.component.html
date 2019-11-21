@@ -1,6 +1,6 @@
 <label *ngFor="let radiobutton of radioItems">
-  <input type="radio" name="options" (click)="model.option = radiobutton"
-  [checked]="radiobutton === model.option">{{radiobutton}}
+  <input type="radio" name="options" (click)="model = radiobutton"
+  >{{radiobutton}}
 </label>
 <p><button (click)="onClickMe()">Submit</button></p>
 <p>{{clickMessage}}</p>
